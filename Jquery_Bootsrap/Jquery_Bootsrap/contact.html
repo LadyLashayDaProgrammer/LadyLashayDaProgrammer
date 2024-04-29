@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+Name: Gennette Sanders
+Coding 05
+Purpose: to create a mobile-first 
+and responsive contact page.
+--> 
+<html lang="en"> 
+    <head>
+        <title>Contact</title>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!--
+            BEGIN STYLES
+        -->
+		<link href="css/main.css" rel="stylesheet">
+		 <!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="icon" href="favicon.gif" type="image/gif">
+		<!--
+            END STYLES
+        -->
+    </head>
+    <body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-md navbar-light">
+			<div class="container">
+			<!-- /.container -->
+				<a href="#" class="navbar-brand ml-auto">The Coffee <br>Shop</a>
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<div class="navbar-nav ml-auto">
+						<a href="index.html" class="nav-item nav-link">Home</a>
+						<a href="contact.html" class="nav-item nav-link active">Contact</a>
+						<a href="gallary.html" class="nav-item nav-link">Gallary</a>
+						<a href="https://wego.here.com/directions/mix//The-Coffee-Shop,-1204-Broadway,-Lubbock,-TX-79401"
+							class="nav-item nav-link" target="_blank" >Directions</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<h2>Contact Us</h2>
+		<h6>Location</h6>
+		<p class="text-center">The Coffee Shop<br>
+			1204 Broadway<br>
+			Lubbock, TX 79401
+		</p>
+		<div class="form-container">
+			<!-- /.container -->
+
+			<div id="msg">
+			    <!-- This is a blank area for us to talk to the user -->
+				<br>
+			</div>
+			<div id="form-div">
+				<form  id="contact" name="contact" action="email.php" method="post">
+					<div class="form-group">
+						<input type="text" class="form-control" id="name" name="name" placeholder="Name" maxlength="64" value="">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="remail1" name="remail1" placeholder="Email" maxlength="64" value="">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="remail2" name="remail2" placeholder="Re-enter Email" maxlength="64" value="">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" maxlength="64" value="">
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" id="message" name="message" placeholder="message" rows="10" maxlength="1000" value=""></textarea>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="form-container">
+			<button  id="send-form" type="button" class="btn btn-primary">Send</button>
+			<button id="clear-form" type="button" class="btn btn-secondary">Clear</button>
+		</div>
+		<footer>
+			<div class="container centered">
+			<!-- /.container -->
+				Copyright &copy; 2020 Gennette Sanders
+			</div>
+		</footer>
+		<!-- JS files: jQuery first, then Bootstrap JS -->
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- custom JS for this application-->
+		<script src="js/main.js"></script>	
+	</body>
+</html>
