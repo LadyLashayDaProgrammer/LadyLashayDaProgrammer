@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-------------------------------
+Name: Gennette Sanders
+Coding 03
+Purpose: to create a mobile-first 
+and responsive contact page.
+---------------------------------->
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="main.css" rel="stylesheet">
+        <link rel="icon" href="favicon.gif" type="image/gif">
+    </head>
+    <body>
+        <header>
+			<h1>The Coffee Shop</h1>
+		</header>
+		<nav>
+			<a href="index.html">Home</a> &nbsp; &nbsp;
+			<a href="contact.html">Contact</a> &nbsp; &nbsp;
+			<a href="https://wego.here.com/directions/mix//The-Coffee-Shop,-1204-Broadway,-Lubbock,-TX-79401"
+			target="_blank">Directions</a>
+		</nav>
+		<h2>Contact Us</h2>
+		<div class="form-container">
+			<div id="msg">
+			    <!-- This is a blank area for us to talk to the user -->
+				<br>
+			</div>
+			<div id="form-div">
+				<form  id="contact" name="contact" action="process.php" method="post">
+					<div class="input-div">
+						<input type="text" class="form-input" id="name" name="name" placeholder="Name" maxlength="64" value="">
+					</div>
+					<div class="input-div">
+						<input type="text" class="form-input" id="email" name="email" placeholder="Email" maxlength="64" value="">
+					</div>
+					<div class="input-div">
+						<input type="text" class="form-input" id="remail" name="remail" placeholder="Re-enter Email" maxlength="64" value="">
+					</div>
+					<div class="input-div">
+						<input type="text" class="form-input" id="subject" name="subject" placeholder="Subject" maxlength="64" value="">
+					</div>
+					<div class="input-div">
+						<textarea class="form-input" id="message" name="message" placeholder="message" rows="10" maxlength="1000" value=""></textarea>
+					</div>
+					<div class="input-div">
+						<button  id="send-form" type="button" class="">Send</button>&nbsp;&nbsp;
+						<button id="clear-form" type="button" class="">Clear</button>
+					</div>
+				</form>
+			</div>
+			<p>
+				The Coffee Shop<br>
+				1204 Broadway<br>
+				Lubbock, TX 79401
+			</p>
+			<footer class="foot">
+				Copyright &copy; 2020 Gennette Sanders
+			</footer>
+		</div>
+		<script src="main.js"></script>	
+	</body>
+</html>
