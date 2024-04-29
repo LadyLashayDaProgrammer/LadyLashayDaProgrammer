@@ -1,0 +1,450 @@
+/*********************************
+ * Name: Gennette Sanders
+ * Purpose: to help keep mobile-first
+ * and responsive home page and contact 
+ * form in the proper format.
+ *************************************/
+ 
+ /*
+***************************************
+Main CSS
+***************************************/
+
+body {
+	background: rgb(2,0,36);
+	background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(253,187,45,1) 100%);
+	height: 100%;
+	margin: 0px auto;
+	padding: 10px;
+	font-size: 22px;
+}
+
+
+h2 {
+	text-align: center;
+	color: #95004e;
+	background-color: #95004e;
+	border-bottom: 3px solid purple;
+}
+
+h3 {
+	text-align: center;
+	padding-Top: 40px;
+	padding-bottom: 60px;
+}
+
+
+label {
+	text-align: left;
+	color: white;
+}
+
+
+#msg {
+	color: green;
+}
+
+#carouselImage {
+	width: 600px;
+	height: 600px;
+}
+
+
+#space2 {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#bkg-color {
+	background-color: #9d071b;
+}
+
+footer {
+	border-top: 2px solid white;
+	margin-top: auto;
+}
+
+#contactbg {
+	background-color: #95004e;
+}
+
+
+
+/*
+***************************************
+Bootstrap Overrides
+***************************************
+*/
+
+/* mobile device bootstrap css */
+
+.btn-li {
+  background: #007bb5;
+  color: white;
+}
+
+.wrapper {
+	border: 1px solid black;
+	min-height: 100%;
+	height: auto;
+	height: 100%;
+	width: 100%;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.navbar {
+	background-image: linear-gradient(to right, #65147c, #830067, #95004e, #9d0035, #9d071b);    
+	border-bottom: 3px solid white;
+	padding: 70px;
+	
+}
+
+.navbar .container .navbar-brand {
+	font-weight: bold;
+	color: white;
+	text-shadow: 1px 1px 2px black;
+}
+
+.navbar .container .navbar-nav .nav-link {
+    color: white;
+    border-radius: .25rem;
+    margin: 0 0.25em;
+	font-weight: bold;
+	font-size: 22px;
+	text-shadow: 1px 1px 2px black;
+
+}
+
+/* change the color of active or hovered links */
+.navbar .container .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover {
+    background-color: gold; /* add background-color to active links */
+	font-size: 22px;
+}
+
+
+
+.text-center {
+	color: white;
+}
+
+.neonText {
+	color: #fff;
+	text-shadow:
+		0 0 7px #fff,
+		0 0 10px #fff,
+		0 0 21px #fff,
+		0 0 42px #0fa,
+		0 0 82px #0fa,
+		0 0 92px #0fa,
+		0 0 102px #0fa,
+		0 0 151px #0fa;
+	font-family: "Vibur", sans-serif;
+}
+
+.neonText2 {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #f09,
+      0 0 82px #f09,
+      0 0 92px #f09,
+      0 0 102px #f09,
+      0 0 151px #f09;
+	text-align: center;
+	font-weight: 400;
+	line-height: 1;
+    animation: pulsate 0.11s ease-in-out infinite alternate;  
+ }
+ 
+
+
+.about-card {
+	
+}
+
+/* styling the button*/
+.neonButton {
+	padding: 10px 10px 10px 10px;
+	display: inline-block;
+	color: #800080;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-decoration: none;
+	overflow: hidden;
+	text-align: center;
+}
+
+/*creating animation effect*/
+.neonButton:hover {
+	color: #111;
+	background: #993CF3;
+	box-shadow: 0 0 50px #993CF3;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.align-self-start, .align-self-center, .align-self-end {
+	padding-bottom: 50px;
+}
+
+.text-wrap {
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: normal;
+	color: white;
+	padding-bottom: 20px;	
+}
+
+
+
+.button {
+	display: flex; 
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+
+.process {
+	color: white;
+	text-align: center;
+}
+
+.home {
+	padding:56.25% 0 0 0;
+	height: 100%;
+	position:relative;
+}
+
+.frame-border {
+	border: 5px solid #EE82EE;
+}
+
+.frame-border02 {
+	border: 5px solid #1E90FF;
+}
+
+
+#body:link, #body:visited {
+  background-color: black;
+  color: white;
+  border: 2px solid #D259A1;
+  padding: 50px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#body:hover, #body:active {
+  background-color: #D259A1;
+  color: black;
+}
+
+.content{
+    padding: 15px;
+    margin-bottom: 15px;
+	text-align: center;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.font-black {
+	color: #000000;
+	font-weight: bold;
+}
+
+.text-pink {
+	color: #d63384;
+	font-weight: bold;
+}
+
+.text-purple {
+	color: purple;
+	font-weight: bold;
+	text-shadow: 2px 2px #000000;
+}
+
+.text-orange { 
+	color: #ff8c00;
+	font-weight: bold;
+}
+
+.text-shadow {
+	font-weight: bold;
+	text-shadow: 2px 2px #000000;
+}
+
+.text-shadow-bl {
+	color: #1E90FF;
+	font-weight: bold;
+	text-shadow: 2px 2px #000000;
+}
+
+
+.social-btn {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+	margin-top: 50px;
+	padding-Top: 50px;
+}
+
+.social-btn a {
+    text-decoration: none;
+}
+
+div.social-btn div {
+	width: 130px;
+	display: inline-block;
+	height: 120px;
+	line-height: 140px;
+	color: #fff;
+	margin-right: 6px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 20px;
+	text-shadow:0px 0px 5px #000;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+}
+
+div.social-btn a:last-child div {
+    margin-right: 0;
+}
+
+div.social-btn div:hover, div.social-btn div:active {
+    height: 135px;
+    padding-top: 15px;
+}
+
+i .fa {
+    -moz-transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+div.face span, div.insta span, div.in span, div.git span{
+    position: absolute;
+    left: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    width: 100px;
+    padding: 0px 15px;
+    opacity: 0;
+    -moz-transition: all 0.6s ease-in;
+    -o-transition: all 0.6s ease-in;
+    -webkit-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in;
+    line-height: 110px;
+    font-size: 20px;
+}
+div.social-btn div:hover i  {
+    opacity: 0;
+}
+div.social-btn div:hover span {
+    opacity: 1;
+}
+div.face {
+    background: #3A5795;
+    -moz-box-shadow: 0px 4px 0px #1e469d;
+    -webkit-box-shadow: 0px 4px 0px #1e469d;
+    box-shadow: 0px 4px 0px #3e6d8d;
+    position: relative;
+}
+
+div.insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    -moz-box-shadow: 0px 4px 0px #1e469d;
+    -webkit-box-shadow: 0px 4px 0px #1e469d;
+    box-shadow: 0px 4px 0px #3e6d8d;
+    position: relative;
+}
+
+div.in {
+    background: #0177B5;
+    -moz-box-shadow: 0px 4px 0px #035e8e;
+    -webkit-box-shadow: 0px 4px 0px #035e8e;
+    box-shadow: 0px 4px 0px #035e8e;
+    position: relative;
+}
+div.git {
+    background: #BBBBBB;
+    -webkit-box-shadow: 0px 4px 0px #b51c19;
+    -moz-box-shadow: 0px 4px 0px #b51c19;
+    box-shadow: 0px 4px 0px #9a9a9a;
+    position: relative;
+}
+div.git i {
+    text-shadow: none;
+}
+
+
+@media (min-width: 240px) {
+
+	.col {
+		margin-bottom: 50px;
+	}
+}
+
+@media (min-width: 540px) {
+	.rounded-circle {
+		width: 50%;
+	}
+	
+	.form-container{
+		text-align: center;
+		margin: 50px auto;
+		width: 60%;
+	}
+	
+}
+
+@media (min-width: 776px) {
+	.img-fluid {
+		width: 50%;
+		margin: 4px 10px 0px 0px; 
+	}
+	
+	.align-self-center {
+		padding-top: 400px;
+	}
+	
+	.about-card {
+		padding-left: 250px;
+	}
+}
+
+@media (min-width: 1004px) { 
+	.img-fluid {
+		width: 50%;
+		margin: 4px 10px 0px 0px; 
+	}
+	.text-wrap {
+		font-family: Georgia, "Times New Roman", serif;
+		font-style: normal;
+		color: white;
+		padding-bottom: 200px;
+	}
+
+	.align-self-center, .align-self-end {
+		padding-Top: 0px;
+	}
+}
