@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+    Document   : index
+    Created on : Jul 14, 2020
+    Author     : Gennette Sanders
+-->
+<html>
+    <head>
+        <title>College Sport Survey Forms</title>
+        <link rel="stylesheet" href="css/css-1.css">
+    </head>
+    <body>
+        <div class="center">
+            <h1>College Sport Survey Forms</h1>
+            <h3>Step 1:</h3>
+            <p>To complete the form below, please enter your information.</p>
+            <form action="form-processor-one.jsp" method="GET">
+                <table class="inline-block">
+                    <tr><th id="th-id1" colspan="2">Student Information</th></tr>
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input type="text" name="firstName"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name:</td>
+                        <td><input type="text" name="lastName"></td>
+                    </tr>
+                    <tr>
+                        <td>College Name:</td>
+                        <td><input type="text" name="collegeName"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number(all 10 digits):</td>
+                        <td><input type="text" name="phoneNumber"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Submit Information"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="center">
+            <h3>Step 2:</h3>
+            <p>To complete the survey below, please enter your choice.</p>
+            <form action="form-processor-two.jsp" method="POST">
+                <table class="inline-block">
+                    <tr><th id="th-id1" colspan="2">Sports Survey</th></tr>
+                    <tr>
+                        <td>Choose a favorite sport:</td>
+                        <td>
+                            <select  name="favoriteSport">
+                                <option value="none">None</option>
+                                <option value="basketball">Basketball</option>
+                                <option value="football">Football</option>
+                                <option value="baseball">Baseball</option>
+                           </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Choose a favorite Team:</td>
+                        <td>
+                            <select  name="favoriteTeam">
+                                <option value="none">None</option>
+                                <option value="lakers">Lakers</option>
+                                <option value="warriors">Warriors</option>
+                                <option value="packers">Packers</option>
+                                <option value="giants">Giants</option>
+                                <option value="yankees">Yankees</option>
+                                <option value="redSocks">Red Socks</option>
+                           </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Choose a favorite Player:</td>
+                        <td>
+                            <select  name="favoritePlayer">
+                                <option value="none">None</option>
+                                <option value="lebronJames">LeBron James</option>
+                                <option value="stephenCurry">Stephen Curry</option>
+                                <option value="aaronRodgers">Aaron Rodgers</option>
+                                <option value="viratKohli">Virat Kohli</option>
+                                <option value="dariusSlay">Darius Slay</option>
+                                <option value="claytoKershaw">Clayton Kershaw</option>
+                           </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Reason why favorite:</td>
+                        <td><input type="text" name="reasonFavorite"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Submit survey"></td>
+                    </tr>
+                </table>
+            </form>       
+        </div>
+    </body>
+</html>
+

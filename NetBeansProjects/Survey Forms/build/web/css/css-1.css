@@ -1,0 +1,66 @@
+/* 
+    Document   : css-1.css
+    Created on : Jul 12, 2020, 5:28:54 PM
+    Author     : Gennette Sanders
+*/
+
+article, aside, figure, footer, head, hgroup,
+menu, nav, section { display: block;}
+
+body {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: gainsboro;
+    
+}
+
+header {
+    background-color: aqua;
+    
+}
+
+nav {
+    background-color: bisque;
+   
+}
+
+section {
+    background-color: chartreuse;
+    
+}
+
+article {
+    background-color: dodgerblue;
+    
+}
+
+aside {
+    background-color: firebrick;
+    
+}
+
+footer {
+    background-color: green;
+    
+}
+
+ul {
+    text-align: left;
+    
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.center {
+    width: 200px;
+    margin: 0 auto;
+    
+}
+
+#th-id1 {
+    background-color: plum;
+    
+}
